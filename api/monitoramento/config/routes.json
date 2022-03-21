@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/monitoramentos",
+      "handler": "monitoramento.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monitoramentos/count",
+      "handler": "monitoramento.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/monitoramentos/:id",
+      "handler": "monitoramento.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/monitoramentos",
+      "handler": "monitoramento.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/monitoramentos/:id",
+      "handler": "monitoramento.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/monitoramentos/:id",
+      "handler": "monitoramento.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

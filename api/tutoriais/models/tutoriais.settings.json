@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tutoriais",
+  "info": {
+    "name": "Tutoriais_plantio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Tutorial": {
+      "type": "text",
+      "required": true
+    },
+    "Url_Video": {
+      "type": "string"
+    },
+    "Fotos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "icone_planta": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Nome_planta": {
+      "via": "tutoriais_plantios",
+      "model": "plantas"
+    }
+  }
+}

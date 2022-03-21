@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plantas",
+  "info": {
+    "name": "Plantas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Dias_total_plantio": {
+      "type": "integer"
+    },
+    "Descricao_planta": {
+      "type": "text"
+    },
+    "Nome_planta": {
+      "type": "string"
+    },
+    "tutoriais_plantios": {
+      "private": true,
+      "collection": "tutoriais",
+      "via": "Nome_planta"
+    },
+    "monitoramentos": {
+      "private": true,
+      "collection": "monitoramento",
+      "via": "Nome_planta"
+    }
+  }
+}

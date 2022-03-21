@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tutoriais",
+      "handler": "tutoriais.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tutoriais/count",
+      "handler": "tutoriais.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tutoriais/:id",
+      "handler": "tutoriais.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tutoriais",
+      "handler": "tutoriais.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tutoriais/:id",
+      "handler": "tutoriais.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tutoriais/:id",
+      "handler": "tutoriais.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

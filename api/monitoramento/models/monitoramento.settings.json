@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monitoramentos",
+  "info": {
+    "name": "Monitoramento"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Data_plantio": {
+      "type": "date"
+    },
+    "Nome_planta": {
+      "via": "monitoramentos",
+      "model": "plantas"
+    }
+  }
+}
